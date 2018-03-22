@@ -1,0 +1,27 @@
+<!--index.wxml-->
+  <view class="top-item">
+    <view class="header">
+        <view class="userinfo">
+            <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+             <block wx:else>
+            <view><image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image></view>
+            <view><text class="userinfo-nickname">我是用户名Lv.3</text></view>
+            </block>
+        </view>
+    <button class="button">+关注</button>
+  </view>
+  <view class="body">
+    <span class="wen">问</span>如何处理伤口才能不留伤疤？
+  </view>
+    <view class="question">我有点疤痕体质，几个月前额头缝针，为了这个问题搜遍了几乎所有中文社区.</view>
+    <!-- <image></image>
+    <image></image> -->
+    <view class="foot">
+    <text class="red">￥100.00</text>
+    <text>125</text>
+    <text>2018.1.16</text>
+  </view>
+  </view>
+  <view class="first-item"><text class="answer">1.首先要明白，伤口愈合得越快，疤痕就越...></text></view>
+  <view class="second-item"><text class="answer">彻底清创缝合：清洁无感染的创面愈合更...></text></view>
+  <view class="third-item"><text class="answer">忌辛辣烟酒：虽然目前还没有很有力的临床...></text></view>
